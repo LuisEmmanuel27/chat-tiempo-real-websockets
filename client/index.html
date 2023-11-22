@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Real Time Chat</title>
+
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            *,
+            *::before,
+            *::after {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                overflow-x: hidden;
+            }
+
+            :root {
+                color-scheme: light dark;
+            }
+
+            body {
+                margin: 0;
+                font-family: "Rubik", sans-serif;
+                display: grid;
+                place-content: center;
+                height: 100vh;
+                padding: 36px;
+                grid-template-rows: 1fr;
+            }
+
+            #chat {
+                position: relative;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                overflow: hidden;
+                width: 350px;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="chat">
+            <form>
+                <input
+                    type="text"
+                    name="message"
+                    placeholder="Escribe un mensaje"
+                    id="input"
+                />
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </body>
+</html>
